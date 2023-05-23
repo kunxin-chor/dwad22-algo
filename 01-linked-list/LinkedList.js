@@ -26,6 +26,14 @@ class LinkedList {
        
     }
 
+    getAt(index) {
+        let currentNode = this.head;
+        for (let i =0; i < index; i++) {
+            currentNode = currentNode.getNext();
+        }
+        return currentNode;
+    }
+
     insertAt(index, newNode) {
         // assume that the head is index 0
         // the `index` argument is where the newNode should be
